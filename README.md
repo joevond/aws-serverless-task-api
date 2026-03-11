@@ -4,7 +4,7 @@
 
 This project demonstrates a serverless backend API built on Amazon Web Services using fully managed cloud services.
 
-## Architecture flow:
+## Architecture flow
 
 Client → API Gateway → AWS Lambda → DynamoDB
 
@@ -12,7 +12,7 @@ Client → API Gateway → AWS Lambda → DynamoDB
 
 The client sends HTTP requests to API Gateway, which triggers a Lambda function to process the request. The Lambda function interacts with DynamoDB to store or retrieve task data.
 
-## API Endpoints:
+## API Endpoints
 
 | Method | Endpoint | Description |
 
@@ -24,7 +24,7 @@ The client sends HTTP requests to API Gateway, which triggers a Lambda function 
 
 | DELETE | `/task/{taskId}` | Delete a task |
 
-### Example POST request body:
+### Example POST request body
 
 ```json
 {
@@ -34,7 +34,7 @@ The client sends HTTP requests to API Gateway, which triggers a Lambda function 
 }
 ```
 
-### Example POST response:
+### Example POST response
 
 ```json
 {
@@ -45,7 +45,7 @@ The client sends HTTP requests to API Gateway, which triggers a Lambda function 
 }
 ```
 
-## Technologies Used:
+## Technologies Used
 
 Python
 
@@ -59,7 +59,7 @@ IAM Roles and Policies
 
 Amazon CloudWatch
 
-## What I Learned:
+## What I Learned
 
 Building serverless applications using AWS managed services
 
