@@ -17,8 +17,10 @@ API Gateway
 AWS Lambda
 
   ↓
-  
+
 DynamoDB
+
+![Architecture Diagram](architecture/serverless-diagram.png)
 
 The client sends HTTP requests to API Gateway, which triggers a Lambda function to process the request. The Lambda function interacts with DynamoDB to store or retrieve task data.
 
