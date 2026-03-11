@@ -18,6 +18,8 @@ DynamoDB
 
 | Method | Endpoint | Description |
 
+|--------|----------|-------------|
+
 | POST | `/task` | Create a task |
 
 | GET | `/tasks` | Retrieve all tasks |
@@ -25,6 +27,14 @@ DynamoDB
 | DELETE | `/task/{taskId}` | Delete a task |
 
 ### Example POST request body:
+
+```json
+{
+  "task": "Learn AWS Lambda",
+  "priority": "high",
+  "completed": false
+}
+```
 
 {
   "task": "Learn AWS Lambda",
