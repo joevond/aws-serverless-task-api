@@ -17,8 +17,16 @@ DynamoDB
 
 API Endpoints:
 
+Retrieve All Tasks:
+
 GET /tasks
+
+Delete a Task:
+
 DELETE /task/{taskId}
+
+Create a Task:
+
 POST /task
 
 Example POST request body:
