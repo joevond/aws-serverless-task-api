@@ -2,9 +2,9 @@
 
 ## Serverless Task Management API
 
-### This project demonstrates a serverless backend application built on Amazon Web Services using managed cloud services. The API allows users to create, delete, and retrieve tasks using a scalable serverless architecture powered by API Gateway, AWS Lambda, and DynamoDB.
+This project demonstrates a serverless backend application built on Amazon Web Services using managed cloud services. The API allows users to create, delete, and retrieve tasks using a scalable serverless architecture powered by API Gateway, AWS Lambda, and DynamoDB.
 
-Architecture flow:
+## Architecture flow:
 
 Client
   ↓
@@ -14,7 +14,7 @@ AWS Lambda
   ↓
 DynamoDB
 
-API Endpoints:
+## API Endpoints:
 
 | Method | Endpoint | Description |
 
@@ -24,7 +24,7 @@ API Endpoints:
 
 | DELETE | `/task/{taskId}` | Delete a task |
 
-Example POST request body:
+### Example POST request body:
 
 {
   "task": "Learn AWS Lambda",
@@ -32,7 +32,7 @@ Example POST request body:
   "completed": false
 }
 
-Example POST response:
+### Example POST response:
 
 {
   "taskId": "uuid",
@@ -41,7 +41,7 @@ Example POST response:
   "completed": false
 }
 
-Technologies Used:
+## Technologies Used:
 
 Python
 
@@ -55,7 +55,7 @@ IAM Roles and Policies
 
 Amazon CloudWatch
 
-What I Learned:
+## What I Learned:
 
 Building serverless applications using AWS managed services
 
@@ -67,7 +67,7 @@ Managing permissions using IAM roles and policies
 
 Debugging and monitoring serverless applications using CloudWatch logs
 
-Future Improvements
+## Future Improvements
 
 - Add task update endpoint (PATCH /task/{taskId})
   
@@ -77,5 +77,5 @@ Future Improvements
   
 - Add filtering and querying for tasks
 
-Author
+## Author
 Joe Vonderlinden
