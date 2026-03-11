@@ -7,11 +7,17 @@ This project demonstrates a serverless backend API built on Amazon Web Services 
 ## Architecture flow:
 
 Client
+
   ↓
+  
 API Gateway
+
   ↓
+  
 AWS Lambda
+
   ↓
+  
 DynamoDB
 
 The client sends HTTP requests to API Gateway, which triggers a Lambda function to process the request. The Lambda function interacts with DynamoDB to store or retrieve task data.
