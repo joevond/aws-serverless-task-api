@@ -1,9 +1,8 @@
-#Title # aws-serverless-task-api
+# aws-serverless-task-api
 
-##Section Serverless Task Management API
+## Serverless Task Management API
 
-###Subsection This project demonstrates a serverless backend application built on Amazon Web Services using managed cloud services.
-The API allows users to create, delete, and retrieve tasks using a scalable serverless architecture powered by API Gateway, AWS Lambda, and DynamoDB.
+### This project demonstrates a serverless backend application built on Amazon Web Services using managed cloud services. The API allows users to create, delete, and retrieve tasks using a scalable serverless architecture powered by API Gateway, AWS Lambda, and DynamoDB.
 
 Architecture flow:
 
