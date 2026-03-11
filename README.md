@@ -7,17 +7,11 @@ This project demonstrates a serverless backend API built on Amazon Web Services 
 ## Architecture flow:
 
 Client
-
-  ↓
-  
+→ 
 API Gateway
-
-  ↓
-  
+→ 
 AWS Lambda
-
-  ↓
-
+→
 DynamoDB
 
 ![Architecture Diagram](architecture/architecture-diagram-small.png) 
