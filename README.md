@@ -87,18 +87,6 @@ Managing service permissions with IAM
 
 Debugging serverless systems using CloudWatch logs
 
-Future Improvements
-
-Add task deletion endpoint
-
-Add task update functionality
-
-Add frontend interface hosted on S3
-
-Implement filtering and querying for tasks
-
-Add authentication using Amazon Cognito
-
 Author
 
 Joe Vonderlinden
