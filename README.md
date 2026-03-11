@@ -49,19 +49,38 @@ Example POST response:
 Technologies Used:
 
 Python
+
 AWS Lambda
+
 Amazon API Gateway
+
 Amazon DynamoDB
+
 IAM Roles and Policies
-CloudWatch
+
+Amazon CloudWatch
 
 What I Learned:
 
 Building serverless applications using AWS managed services
-Designing REST APIs with API Gateway
-Connecting Lambda functions to DynamoDB
-Managing service permissions with IAM
-Debugging serverless systems using CloudWatch logs
 
-Author:
+Designing REST APIs with Amazon API Gateway
+
+Connecting Lambda functions with DynamoDB for data persistence
+
+Managing permissions using IAM roles and policies
+
+Debugging and monitoring serverless applications using CloudWatch logs
+
+Future Improvements
+
+- Add task update endpoint (PATCH /task/{taskId})
+  
+- Implement frontend UI hosted on S3
+  
+- Add authentication using Amazon Cognito
+  
+- Add filtering and querying for tasks
+
+Author
 Joe Vonderlinden
