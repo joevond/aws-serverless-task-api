@@ -10,6 +10,7 @@ def lambda_handler(event, context):
 
     method = event["requestContext"]["http"]["method"]
 
+    # CREATE TASK
     if method == "POST":
 
         body = json.loads(event["body"])
@@ -31,6 +32,7 @@ def lambda_handler(event, context):
             "body": json.dumps(item)
         }
 
+    # GET ALL TASKS
     elif method == "GET":
 
         response = table.scan()
@@ -38,4 +40,42 @@ def lambda_handler(event, context):
         return {
             "statusCode": 200,
             "body": json.dumps(response["Items"])
+        }
+
+    # DELETE TASK
+    elif method == "DELETE":
+
+        path_params = event.get("pathParameters") or {}
+        task_id = path_params.get("taskId")
+
+        if not task_id:
+            return {
+                "statusCode": 400,
+                "body": json.dumps({
+                    "message": "Missing taskId in path"
+                })
+            }
+
+        table.delete_item(
+            Key={
+                "taskId": task_id
+            }
+        )
+
+        return {
+            "statusCode": 200,
+            "body": json.dumps({
+                "message": "Task deleted",
+                "taskId": task_id
+            })
+        }
+
+    # METHOD NOT SUPPORTED
+    else:
+
+        return {
+            "statusCode": 400,
+            "body": json.dumps({
+                "message": "Unsupported HTTP method"
+            })
         }
