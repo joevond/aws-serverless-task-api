@@ -16,6 +16,10 @@ AWS Lambda
 DynamoDB
 
 API Endpoints:
+| Method | Endpoint | Description |
+| POST | `/task` | Create a task |
+| GET | `/tasks` | Retrieve all tasks |
+| DELETE | `/task/{taskId}` | Delete a task |
 
 Retrieve All Tasks:
 
