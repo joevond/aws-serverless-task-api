@@ -25,18 +25,6 @@ API Endpoints:
 
 | DELETE | `/task/{taskId}` | Delete a task |
 
-Retrieve All Tasks:
-
-GET /tasks
-
-Delete a Task:
-
-DELETE /task/{taskId}
-
-Create a Task:
-
-POST /task
-
 Example POST request body:
 
 {
