@@ -36,20 +36,16 @@ DynamoDB
 }
 ```
 
-{
-  "task": "Learn AWS Lambda",
-  "priority": "high",
-  "completed": false
-}
-
 ### Example POST response:
 
+```json
 {
   "taskId": "uuid",
   "task": "Learn AWS Lambda",
   "priority": "high",
   "completed": false
 }
+```
 
 ## Technologies Used:
 
