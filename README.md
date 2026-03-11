@@ -14,7 +14,7 @@ AWS Lambda
   ↓
 DynamoDB
 
-### The client sends HTTP requests to API Gateway, which triggers a Lambda function to process the request. The Lambda function interacts with DynamoDB to store or retrieve task data.
+The client sends HTTP requests to API Gateway, which triggers a Lambda function to process the request. The Lambda function interacts with DynamoDB to store or retrieve task data.
 
 ## API Endpoints:
 
